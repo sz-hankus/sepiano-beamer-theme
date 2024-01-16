@@ -1,0 +1,20 @@
+\DeclareOptionBeamer{shadow}{\PassOptionsToPackage{shadow=#1}{beamerinnerthemesepiano}}
+\ExecuteOptionsBeamer{shadow=true}
+\DeclareOptionBeamer{rounded}{\PassOptionsToPackage{rounded=#1}{beamerinnerthemesepiano}}
+\ExecuteOptionsBeamer{rounded=true}
+\ProcessOptionsBeamer
+% \RequirePackage{iwona}
+% \setmainfont{iwona}
+
+\mode<presentation>
+
+\useoutertheme[subsection=false]{smoothbars}
+% \useinnertheme[shadow=true]{rounded}
+\useinnertheme{sepiano}
+\usecolortheme{sepiano}
+
+\setbeamerfont{block title}{size={}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+
+\mode<all>

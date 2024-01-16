@@ -1,0 +1,51 @@
+\mode<presentation>
+% Required packages
+\RequirePackage{color}
+
+\definecolor{solarizedBase03}{HTML}{002B36}
+\definecolor{solarizedBase02}{HTML}{073642}
+\definecolor{solarizedBase01}{HTML}{586E75}
+\definecolor{solarizedBase00}{HTML}{657b83}
+\definecolor{solarizedBase0}{HTML}{839496}
+\definecolor{solarizedBase1}{HTML}{93a1a1}
+\definecolor{solarizedBase2}{HTML}{EEE8D5}
+\definecolor{solarizedBase3}{HTML}{FDF6E3}
+\definecolor{solarizedYellow}{HTML}{B58900}
+\definecolor{solarizedOrange}{HTML}{CB4B16}
+\definecolor{solarizedRed}{HTML}{DC322F}
+\definecolor{solarizedMagenta}{HTML}{D33682}
+\definecolor{solarizedViolet}{HTML}{6C71C4}
+\definecolor{solarizedBlue}{HTML}{268BD2}
+\definecolor{solarizedCyan}{HTML}{2AA198}
+\definecolor{solarizedGreen}{HTML}{859900}
+
+% Palette
+\setbeamercolor*{palette primary}{use=structure,fg=solarizedBlue,bg=solarizedBase2}
+\setbeamercolor*{palette secondary}{use=structure,fg=solarizedBase03,bg=solarizedBase3}
+\setbeamercolor*{palette tertiary}{use=structure,fg=solarizedYellow,bg=solarizedBase3}
+
+% Titles, background
+% \setbeamercolor*{titlelike}{use=structure,parent=palette primary}
+\setbeamercolor*{title}{use=structure,parent=palette primary}
+\setbeamercolor*{frametitle}{use=structure,parent=palette primary}
+\setbeamercolor*{framesubtitle}{use=structure,parent=palette primary}
+\setbeamercolor*{background canvas}{use=structure,bg=solarizedBase3}
+
+\setbeamercolor*{section in head/foot}{use=structure,parent=palette secondary}
+\setbeamercolor*{itemize item}{use=structure,fg=solarizedYellow}
+\setbeamercolor*{item projected}{use=structure,fg=solarizedBase3,bg=solarizedBase03} % enumerate items and toc sections
+
+\setbeamercolor{section in toc}{parent=palette secondary}
+% Blocks
+\setbeamercolor{block title}{fg=solarizedBlue!30,bg=solarizedBlue}
+\setbeamercolor{block body}{fg=solarizedBase03,bg=solarizedBlue!20}
+\setbeamercolor{block title alerted}{fg=solarizedOrange!30,bg=solarizedOrange}
+\setbeamercolor{block body alerted}{fg=solarizedBase03,bg=solarizedOrange!20}
+\setbeamercolor{block title example}{fg=solarizedGreen!30,bg=solarizedGreen}
+\setbeamercolor{block body example}{fg=solarizedBase03,bg=solarizedGreen!20}
+
+% TODO: when enabled
+\setbeamercolor*{navigation symbols}{use=structure,fg=solarizedBlue}
+
+\mode
+<all>

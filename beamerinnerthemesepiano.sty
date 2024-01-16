@@ -1,0 +1,20 @@
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themesepiano@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=false}
+\DeclareOptionBeamer{rounded}[true]{\def\beamer@themesepiano@rounded{#1}}
+\ExecuteOptionsBeamer{rounded=false}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\setbeamertemplate{blocks}[rounded][shadow=\beamer@themesepiano@shadow]
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[square]
+\setbeamertemplate{section in toc}{\inserttocsectionnumber{}. \inserttocsection{}}
+\setbeamertemplate{subsection in toc}{\hspace{1.2em}\inserttocsectionnumber{}.\inserttocsubsectionnumber{}. \inserttocsubsection{} \par}
+\setbeamertemplate{subsubsection in toc}{\hspace{2.4em}\inserttocsectionnumber{}.\inserttocsubsectionnumber{}.\inserttocsubsubsectionnumber. \inserttocsubsubsection{} \par}
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=\beamer@themesepiano@rounded,shadow=\beamer@themesepiano@shadow]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=\beamer@themesepiano@rounded,shadow=\beamer@themesepiano@shadow]
+\setbeamertemplate{section page}[default][colsep=-4bp,rounded=\beamer@themesepiano@rounded,shadow=\beamer@themesepiano@shadow]
+\setbeamertemplate{subsection page}[default][colsep=-4bp,rounded=\beamer@themesepiano@rounded,shadow=\beamer@themesepiano@shadow]
+  
+\mode<all>

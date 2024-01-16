@@ -1,0 +1,77 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+
+% PACKAGES
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+% Use the theme
+% \usetheme{sepiano}
+
+% PASS THE OPTIONS
+\usetheme[shadow=false,rounded=false]{sepiano}
+
+\title{Sepiano beamer theme}
+\author{Szymon Hankus}
+\date{\today}
+
+\begin{document}
+    \frame{\titlepage}
+        \begin{frame}{Table of contents}
+        \tableofcontents
+    \end{frame}
+
+    \section{Some section}
+    \begin{frame}{Lists}
+        \framesubtitle{An example subtitle}
+        Itemize:
+        \begin{itemize}
+            \item item1
+            \item item2
+            \item item3
+        \end{itemize}
+        Enumerate:
+        \begin{enumerate}
+            \item item1
+            \item item2
+            \item item3
+        \end{enumerate}
+    \end{frame}
+
+    \subsection{Some subsection}
+    \subsubsection{Some subsubsection}
+    \begin{frame}{Blocks}{Another frame}
+        \begin{block}{A basic block}
+          Some message
+        \end{block}
+        \begin{alertblock}{An alert block}
+          An alert message
+        \end{alertblock}
+        \begin{exampleblock}{An example block}
+          Some example
+        \end{exampleblock}
+    \end{frame}
+    
+    \section{Section no.2}
+    \begin{frame}[fragile]{Some code}
+      \begin{columns}
+      \begin{column}{0.4\textwidth}
+        \textbf{\textit{Go}} ahead, take a look at~this piece of code
+      \end{column}
+      \begin{column}{0.6\textwidth}
+        \begin{verbatim}
+import "fmt"
+
+func main() {
+    fmt.Println("hello there")
+}
+        \end{verbatim}  
+      \end{column}
+      \end{columns}
+    \end{frame}
+
+    \appendix
+    \begin{frame}
+        \centering
+        \fontsize{40}{50} \selectfont \color{solarizedOrange} Thanks!
+    \end{frame}
+\end{document}
